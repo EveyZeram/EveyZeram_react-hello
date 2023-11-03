@@ -20,8 +20,8 @@ function SimpleCounter(props) {
                 <div className="calendar">
                     <i className="fas fa-clock"></i>
                 </div>
-                <div className="six">{props.digitFour % 10}</div>
-                <div className="five">{props.digitFour % 10}</div>
+                <div className="six">{props.digitSix % 10}</div>
+                <div className="five">{props.digitFive % 10}</div>
                 <div className="four">{props.digitFour % 10}</div>
                 <div className="three">{props.digitThree % 10}</div>
                 <div className="two">{props.digitTwo % 10}</div>
@@ -33,7 +33,6 @@ function SimpleCounter(props) {
     )
 };
 
-
 SimpleCounter.propTypes = {
     digitSix: PropTypes.number,
     digitFive: PropTypes.number,
@@ -42,7 +41,6 @@ SimpleCounter.propTypes = {
     digitTwo: PropTypes.number,
     digitOne: PropTypes.number
 }
-
 
 let counter = 0;
 setInterval(function () {
